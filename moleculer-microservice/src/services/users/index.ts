@@ -28,10 +28,12 @@ export class UserAction {
 	}
 
 	public async checkIfEmailExist(email: string): Promise<boolean> {
+		
 		return await checkEmail(email, this._client);
 	}
 
 	public async createUser(userData: UserPayload): Promise<string>{
+		await this.createIndex("users")
 		return await registerHelper(userData, this._client);
 	}
 
