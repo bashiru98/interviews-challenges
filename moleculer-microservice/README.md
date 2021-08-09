@@ -8,7 +8,8 @@
 
 -   `npm run dc:up`: Start the stack with Docker Compose
 -   `npm run dc:down`: Stop the stack with Docker Compose
--   `npm run dc:lint`: to check if the code is well lint
+-   `npm run lint`: to check if the code is well lint
+-   `npm run dc:logs`: to check logds of all services running in docker Compose
 -   `npm test`: Run tests & generate coverage report
 
 
